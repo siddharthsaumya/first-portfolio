@@ -1,0 +1,244 @@
+<title>Say Hello</title>
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/blog.css">
+<link rel="stylesheet" href="css/contact-us-top.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/contact.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Muli:wght@400;500;600;700&family=Lato:wght@400;700&family=Martel:wght@600;700&family=Source+Sans+Pro:wght@400;600;700&family=Questrial&family=Montserrat:wght@400;500;600&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="shortcut icon" href="media/favicon.ico" type="image/ico">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<meta  charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="(max-width:775px)" href="css/mabout.css">
+<link rel="stylesheet" media="(max-width:775px)" href="css/mblog.css">
+<link rel="stylesheet" media="(max-width:775px)" href="css/mcontact-us-top.css">
+<link rel="stylesheet" media="(max-width:775px)" href="css/mheader.css">
+<link rel="stylesheet" media="(max-width:775px)" href="css/mfooter.css">
+<link rel="stylesheet" media="(max-width:775px)" href="css/mcontact.css">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+<a name="top"></a>
+  </head>
+<body>
+
+<table id="nav-bar">
+  <tr>
+      <td id="logo" class="navTd logoColorLight">S.</td>
+    <td class="navTd">
+      <div class="container ">
+        <a href="index.html"  class="navLink" >ABOUT</a>
+        <a href='blog.html'   class="navLink ">BLOG</a>
+        <a  href="contact.html"  class="navLink ">CONTACT</a>
+      </div>
+    </td>
+    <td><img id="displayPicture"  class="navTd" src="media/displayPicture.jpg" alt=""></td>
+  </tr>
+</table>
+<table id="navUpDown" >
+<tr>
+
+<td>
+<a style=" text-decoration:none;" onclick="topFunction()">
+<span class="buttonsUpDown" style="z-index:11;padding:15px 16px; position:relative;">▲</span></a>
+</td>
+</tr>
+<tr>
+<td><a style=" text-decoration:none;" href="#bottom">
+<span class="buttonsUpDown" style="z-index:10;padding:7px 8px; position:relative;top:16px;left:8px;">▼</span></a>
+</td>
+</tr>
+</table>
+  <span id="logoMobile">S.</span>
+<img src="media/navIcon.jpg" id="navIconMobile" onclick="openNavv()">
+<div id="myNavRight" class="overlayHeadMobile">
+  <a href="javascript:void(0)" class="closebtnn" onclick="closeNavv()">✕</a>
+  <div class="overlay-content">
+    <a class="linkOverlaymobile" href="index.html">ABOUT</a>
+    <a class="linkOverlaymobile" href="blog.html">BLOG</a>
+    <a class="linkOverlaymobile" href="contact.html">CONTACT</a>
+  </div>
+</div>
+
+
+
+
+<div class="heightOfSections" alt="Contact Home Section">
+<img src="media/bgImgContact.jpg" id="bgImgContact" alt="">
+<img src="media/bgImgContactMobile.jpg" id="bgImgContactMobile" alt="">
+  <span id="contactMainText">Let's<br class="unwantedBr"/> connect.</span>
+<img id="swipeDownArrowGif2" src="media/giphy.gif" >
+</div>
+<!--**************************************************************************************************************************-->
+<div id="contactMainArea" alt="Contact Middle Section">
+  <div style="text-align:center;">
+
+<table >
+<div class="table-row-contact" >
+  <div class="table-col-contact"  >
+    <a id="buttonOverlay" onclick="myFunction()">
+      <div id="friendlyHi">
+        <span id="titleContactMiddle">Anytime.</span><br><br>
+        Feel free to reach out to me if you have have any questions or comments about services i offer. Also, you could always just send me a friendly hello.<br />
+        <br><br><span id="sayHi">SAY HELLO</span>
+      </div>
+    </a>
+  </div>
+  <div class="table-col-contact" >
+    <a style="position:relative;" id="buttonOverlay" onclick="myFunctiontwo()">
+      <div id="friendlyHi">
+        <span id="titleContactMiddle">Support.</span><br><br>
+        If you like my website and want to help me buy a paid .com, you can support me. Any amount would be appreciated. Also, you can buy me momos.<br />
+        <br><br><span id="sayHi">DONATE</span>
+      </div>
+    </a>
+  </div>
+</div>
+</table>
+
+<table >
+<div class="table-row-contact" >
+  <div class="table-col-contact"  >
+    <a id="buttonOverlay" onclick="myFunction()">
+      <div id="friendlyHi2">
+        <span id="titleContactMiddle">Anytime.</span><br><br>
+        Feel free to reach out to me if you have have any questions or comments about services i offer. Also, you could always just send me a friendly hello.<br />
+        <br><br><span id="sayHi">SAY HELLO</span>
+      </div>
+    </a>
+  </div>
+
+</div>
+<div class="table-row-contact" >
+  <div class="table-col-contact" >
+    <a style="position:relative;" id="buttonOverlay" onclick="myFunctiontwo()">
+      <div id="friendlyHi2">
+        <span id="titleContactMiddle">Support.</span><br><br>
+        If you like my website and want to help me buy a paid .com, you can support me. Any amount would be appreciated. Also, you can buy me momos.<br />
+        <br><br><span id="sayHi">DONATE</span>
+      </div>
+    </a>
+  </div>
+  </div>
+</table>
+
+
+    <span id="extraContactBottom">I prefer <br class="unwantedBr"/><a class="innerTextLink" href="http://instagram.com/thesiddharthsaumya">Instagram DMs</a> and <a class="innerTextLink" href="https://www.linkedin.com/in/siddharth-saumya/">LinkedIn messages</a>.</span>
+  </div>
+  <iframe id="map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7049.258855172208!2d85.81242281502955!3d20.350537600265238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19093d0ca4a54f%3A0x3535e34f5c397d93!2sKing&#39;s%20Palace%207%20Block-A!5e0!3m2!1sen!2sin!4v1588187341480!5m2!1sen!2sin"
+    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+<!--**************************************************************************************************************************-->
+
+<form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbyca6VgOfsAG-HTek8QsqLMrI5z7wC9dQ6srREA/exec">
+  <div class="hideIt" id="myDIV">
+    <div id="backgroundOverlayContact">
+<a onclick="myFunction()"><span class="crossOnOverlay" >🞪</span></a>
+
+    <div class="form-elements">
+
+         <fieldset  class="name pure-group">
+                <label class="mainContactText" for="name">What's you name?</label><br>
+                <input class="textBoxInput" placeholder="FULL NAME" id="name" name="name"  />
+              </fieldset>
+
+
+            <fieldset  class="email pure-group">
+              <label class="mainContactText" for="email">And email address ?</label><br>
+              <input id="email" class="textBoxInput" placeholder="EMAIL ADDRESS" name="email" type="email" value="" required  />
+              <span class="email-invalid" style="display:none; color:#db3232;">Invalid email address.</span>
+            </fieldset>
+
+
+
+      <fieldset  class="msg pure-group">
+        <label class="mainContactText" for="message">Say something nice.</label><br>
+        <textarea class="textBoxInput" placeholder="WRITE YOUR MESSAGE HERE" id="message" name="message" rows="10" col="10" ></textarea>
+      </fieldset>
+
+      <button id="send-button">Send Message</button>
+    </div>
+
+    <div class="thankyou_message" style="display:none;">
+      Thanks For Buzzing My Phone!<br><br>We Are Not Strangers Anymore!
+    </div>
+  </div>
+    </div>
+</form>
+
+<!--*********************************************************************************************************** -->
+
+<div class="hideIt" id="myDIV2">
+  <div id="backgroundOverlayContact2">
+<a onclick="myFunctiontwo()"><span  style="position:relative;bottom:1vh;float:right;font-size:1.5rem;cursor:pointer;">🞪</span></a>
+
+
+
+  <a target="_blank style="text-decoration:none;" href="https://www.paypal.me/siddharthsaumya"><button id="donateButton"><img src="media/paypal.png" id="paypalimg" ></button></a>
+
+
+
+
+
+</div>
+  </div>
+
+<script>
+  function myFunction() {
+    var element = document.getElementById("myDIV");
+
+    element.classList.toggle("mystyle");
+document.getElementById("myDIV").classList.toggle("hideIt");
+  }
+
+  function myFunctiontwo() {
+    var element = document.getElementById("myDIV2");
+
+    element.classList.toggle("mystyle");
+document.getElementById("myDIV2").classList.toggle("hideIt");
+  }
+
+
+
+
+</script>
+
+
+<!--**************************************************************************************************************************-->
+<div  style="height:65%;width:100%;display:block;background-color:#0a0a0a;"    alt="Footer">
+    <div id="footer">
+      <div id="overlapFooter">
+Let me build the website you need.
+      </div>
+<div id="footerLinks">
+  <a href="index.html" class="footerLink" >ABOUT</a>
+  <a href='blog.html' class="footerLink">BLOG</a>
+  <a  href="contact.html" class="footerLink">CONTACT</a>
+</div>
+<div id="footerShare">
+  <a href="http://instagram.com/thesiddharthsaumya"><span class="footerShareShape"><img class="picShareType1" src="media/insta.png" ></span></a>
+  <a href="https://twitter.com/foodieDev"><span class="footerShareShape"><img class="picShareType1" src="media/twtr.png" ></span></a>
+  <a href="https://www.linkedin.com/in/siddharth-saumya/"><span class="footerShareShape"><img class="picShareType1" src="media/lnkd.png" ></span></a>
+  <a href="http://t.me/siddharthsaumya"><span class="footerShareShape"><img class="picShareType1" src="media/tele.png" ></span></a>
+<a href="https://github.com/siddharthsaumya"><span class="footerShareShape"><img class="picShareType1" src="media/git.png" ></span></a>
+<a href="mailto:sidmya@gmail.com"><span class="onlyMailIcon"><img class="picShareType1" src="media/gmail.png" ></span></a>
+</div>
+
+<div id="footerExtra">
+  Handcrafted with ❤️️ by Siddharth Saumya
+</div>
+      </div></div><a name="bottom"></a>
+
+<footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.3/typeit.min.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+  <script src="index.js"></script>
+
+</footer>
+
+      </body>
+      </html>
+<!--**************************************************************************************************************************-->

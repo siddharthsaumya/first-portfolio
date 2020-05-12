@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+<link rel="shortcut icon" href="../media/favicon.ico" type="image/ico">
+    <meta charset="utf-8">
+    <style>
+    body {
+    	background: linear-gradient(to bottom, #B721FF, #2AF598, #fec051, #FEE140,#ff5c5c, #fa70ce );
+    	background-size: 100%;
+    	background-repeat: no-repeat;
+    }
+    ::selection {
+      background: #ffa8e3;
+    }
+    ::-moz-selection {
+      background: #ffa8e3;
+    }
+    body:before{
+    	content:'';
+    	position: fixed;
+    	top: 0;
+    	bottom: 0;
+    	width: 100%;
+    	z-index: -1;
+    	background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #40a9ff 80%);
+    }
+  html {
+    	margin: 0;
+    	font-family: 'Muli', sans-serif;
+    }
+    body {
+    	margin: 0;
+    	font-size: 1.15rem;
+          	font-family: 'Muli', sans-serif;
+    	line-height: 1.4em;
+    }
+    #container {
+    	background-color: #FFF;
+    	margin:5vh 5vw 5vh 7vw;
+    	padding: 5vh 5vw;
+    	border-radius: 20px;
+    	box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+    }
+    main {
+    	padding: 20px;
+    	color:#525252;
+    }
+    #titlePost{
+    	font-size:2.5rem;
+    	font-weight:700;
+    }
+    #backArrow{
+      background-color:#fff;
+    position:relative;
+    color:black;
+    top:8vh;
+    box-shadow:0 0px 10px 0 rgba(0,0,0,0.20);
+    left:3.4vw;
+      padding:.45em .6em;
+      border-radius:50px;
+        font-size:2.5rem;
+        font-family: 'Muli', sans-serif;
+        font-weight:600;
+        text-decoration:none;
+    }
+    .exampleTitle{
+      color:#ff5757;
+      font-weight: 500;
+font-family: 'Montserrat', sans-serif;
+    }
+    .exampleDescription{
+      color:#c261ff;
+      font-family: 'Montserrat', sans-serif;
+    }
+    #backArrow:hover{
+    box-shadow:0 0px 26px 0 rgba(0,0,0,0.20);
+    transition:.3s ease-in-out;
+    }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Muli:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>All the confusing versus at one place</title>
+  </head>
+  <body>
+    	<a style="	text-decoration:none;" href="../blog.html#post2"><span id="backArrow" >🠔</span></a>
+    <div id="container">
+
+
+
+    				<span id="titlePost">All the confusing versus at one place.</span>
+    					<p>HTML vs HAML, CSS vs SCSS,Vanilla JavaScript vs jQuery, XML vs JSON, React vs Angular vs Vue.js, PHP vs Node.js and SQL vs NoSQL.</p>
+
+
+    </div>
+    <div id="container">
+
+    <main>
+<p>Finding answer to all these versus can be difficult sometimes. Here is a quick answer to all of them. If you want detail comparison or if any topic i have missed you can ask for it.</p>
+<ul>
+
+  <h2><li>HAML vs HTML</li></h2>
+<p><h3>HAML:</h3> Haml is a markup language that’s used to cleanly and simply describe the HTML of any web document, without the use of inline code. Haml functions as a replacement for inline page templating systems such as PHP, ERB, and ASP. However, Haml avoids the need for explicitly coding HTML into the template, because it is actually an abstract description of the HTML, with some code to generate dynamic content.</p>
+<p><h4>In simple language:</h4> Browsers only understand HTML. HAML is just a templating language that gets transformed into HTML (e.g. same final output). If you find the HAML syntax to be easier than HTML then go for it. However IMHO - abstracting away what actual elements you are generating just makes applying CSS and doing JavaScript navigation that much more difficult.</p>
+<p><span class="exampleTitle">HAML:-</span><br /><span class="exampleDescription">
+  %html <br />
+    %head<br />
+      %title Raphael Graph<br />
+      %link(rel="stylesheet" href="/css/bootstrap.min.css")<br />
+      %link(rel="stylesheet" href="/css/graph/global.css")<br />
+      %script(src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js")<br />
+      %script(src="../js/raphael-min.js")<br />
+      %script(src="../js/g.raphael-min.js")<br />
+      %script(src="../js/g.bar-min.js")<br />
+      %script(src="../js/jquery.qtip-1.0.0-rc3.min.js")<br />
+      :javascript<br />
+        $(getUpdate);<br />
+        function getUpdate(){<br />
+          $("body").load("/");<br />
+          setTimeout(getUpdate, 15000);<br />
+        }<br />
+    %body= yield<br />
+    :javascript<br />
+      var rubyArray = #{$ruby_array};<br />
+    %script(src="../js/graph/graph.js")<br />
+    .graph-container<br />
+      %p This is where the graph will go<br />
+    .legend<br />
+      %ul<br />
+        %li<br />
+          %span(class="blue")<br />
+          November 20th<br />
+        %li<br />
+          %span(class="black")<br />
+          November 21st<br />
+
+
+
+</span></p>
+<p><h3>HTML:</h3> HTML is a core technology markup language of the Internet used for structuring and presenting content for the World Wide Web. As of October 2014 this is the final and complete fifth revision of the HTML standard of the World Wide Web Consortium (W3C). HTML is just about universal among web developers, where as the HAML community is still a relatively small community. This would undoubtly make finding developers to work on your project in the future a more daunting task.</p>
+<p><span class="exampleTitle">HTML:-</span><br /><span class="exampleDescription">
+  &lt;html&gt;<br />
+  &lt;head&gt;<br />
+      &lt;title&gt;Raphael Graph&lt;/title&gt;<br />
+      &lt;link href=&quot;/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;<br />
+      &lt;link href=&quot;/css/graph/global.css&quot; rel=&quot;stylesheet&quot;&gt;<br />
+      &lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js&quot;&gt;&lt;/script&gt;<br />
+      &lt;script src=&quot;../js/raphael-min.js&quot;&gt;&lt;/script&gt;<br />
+      &lt;script src=&quot;../js/g.raphael-min.js&quot;&gt;&lt;/script&gt;<br />
+      &lt;script src=&quot;../js/g.bar-min.js&quot;&gt;&lt;/script&gt;<br />
+      &lt;script src=&quot;../js/jquery.qtip-1.0.0-rc3.min.js&quot;&gt;&lt;/script&gt;<br />
+      &lt;script type=&quot;text/javascript&quot;&gt;<br />
+        //&lt;![CDATA[<br />
+          $(getUpdate);<br />
+          function getUpdate(){<br />
+            $(&quot;body&quot;).load(&quot;/&quot;);<br />
+            setTimeout(getUpdate, 15000);<br />
+          }<br />
+        //]]&gt;<br />
+      &lt;/script&gt;<br />
+    &lt;/head&gt;<br />
+    &lt;body&gt;<br />
+  &lt;div class=&quot;graph-container&quot;&gt;<br />
+    &lt;p&gt;This is where the graph will go&lt;/p&gt;<br />
+  &lt;/div&gt;<br />
+  &lt;div class=&quot;legend&quot;&gt;<br />
+    &lt;ul&gt;<br />
+      &lt;li&gt;<br />
+        &lt;span class=&quot;blue&quot;&gt;&lt;/span&gt;<br />
+        November 20th<br />
+      &lt;/li&gt;<br />
+      &lt;li&gt;<br />
+        &lt;span class=&quot;black&quot;&gt;&lt;/span&gt;<br />
+        November 21st<br />
+      &lt;/li&gt;<br />
+    &lt;/ul&gt;<br />
+  &lt;/div&gt;<br />
+  &lt;/body&gt;<br />
+  &lt;/html&gt;<br />
+
+
+</span></p>
+
+<p><h4>My choice: HTML</h4></p>
+<h2><li>CSS vs SCSS</li></h2>
+<p><h3>CSS: </h3>Cascading Style Sheet is the basically the scripting language. CSS is used for designing web pages.
+CSS is the most important web technologies that are widely used along with HTML and JavaScript. CSS have file extension of .css. Woldwide most commonly used.</p>
+<p><span class="exampleTitle">CSS:-</span><br /><span class="exampleDescription">
+  body{<br />
+   color: #ffffff;<br />
+   font: $ubuntu-font: 'Ubuntu', 'Arial', 'Helvetica', sans-serif;<br />
+   font-size: xx-large;<br />
+   padding: 2rem;<br />
+  }<br />
+</span></p>
+<p><h3>SCSS: </h3>Syntactically Awesome Style Sheet is the superset of CSS. SCSS is the more advanced version of CSS. SCSS was designed by Hampton Catlin and was developed by Chris Eppstein and Natalie Weizenbaum. Due to its advanced features it is often termed as Sassy CSS. SCSS have file extension of .scss. Comparatively smaller community.</p>
+<p><span class="exampleTitle">SCSS:-</span><br /><span class="exampleDescription">
+  $white: #ffffff;<br />
+  $ubuntu-font: $ubuntu-font: 'Ubuntu', 'Arial', 'Helvetica', sans-serif;<br />
+  body{<br />
+   color: $white;<br />
+   font: $ubuntu-font;<br />
+   font-size: xx-large;<br />
+   padding: 2rem;<br />
+  }<br />
+</span></p>
+<p><h4>My choice: Both. You should learn both because one has bigger community and other is advanced.</h4></p>
+
+
+
+<h2><li>Vanilla JavaScript vs jQuery</li></h2>
+<p><h3>Vanilla JavaScript: </h3>JavaScript is a scripting language that is used to add interactivity to our web pages. It is one of the three core technologies alongside HTML and CSS which are used to create web pages. While HTML and CSS define the structure of the web page and look/styling of web pages, JavaScript is used to make the web page dynamic by adding interactivity to it which means with JavaScript we can add some code for mouse click, mouse over and other events on the web page and lot more.</p>
+<p><span class="exampleTitle">Vanilla JavaScript:-</span><br /><span class="exampleDescription">
+  document.getElementById(&quot;button1&quot;) <br />
+             .addEventListener('click', function(){  <br />
+                 alert(&quot;GeeksforGeeks&quot;); <br />
+             }); <br />
+
+<span class="exampleTitle">Or</span><br />
+
+document.getElementsByClassName("hello");  <br />
+</span></p>
+<p><h3>jQuery: </h3>This library is developed to expand the capability of JavaScript, do lot of things with it and also to make the job of the developer easier.It is the most popular JavaScript library invented by John Resign and was released on January 2006 at BarCamp NYC. jQuery is free, an open-source library, licensed under the MIT License. This has a powerful feature of cross-browser compatibility. It can easily handle cross-browser issues that we can face with JavaScript. Thus many developers use jQuery to avoid cross-browser compatibility issues.</p>
+<p><span class="exampleTitle">jQuery:-</span><br /><span class="exampleDescription">
+  $('#button1').click(function() {  <br />
+      alert(&quot;GeeksforGeeks&quot;);  <br />
+  });  <br />
+
+
+<span class="exampleTitle">Or</span><br />
+
+  $('hello')<br />
+</span></p>
+<p><h4>My choice: jQuery.</h4></p>
+
+
+
+
+
+
+<h2><li>XML vs JSON</li></h2>
+<p><h3>XML: </h3>XML is a markup language which is designed to store data. It's popularly used or transfer of data. It is case sensitive. XML offers you to define markup elements and generate customized markup language. The basic unit in the XML is known as an element. Extension of XML file is .xml</p>
+<p><span class="exampleTitle">XML:-</span><br /><span class="exampleDescription">
+  &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;<br />
+  &lt;root&gt;<br />
+  	&lt;student&gt;<br />
+  		&lt;id&gt;01&lt;/id&gt;<br />
+  		&lt;name&gt;Tom&lt;/name&gt;<br />
+  		&lt;lastname&gt;Price&lt;/lastname&gt;<br />
+  	&lt;/student&gt;<br />
+  	&lt;student&gt;<br />
+  		&lt;id&gt;02&lt;/id&gt;<br />
+  		&lt;name&gt;Nick&lt;/name&gt;<br />
+  		&lt;lastname&gt;Thameson&lt;/lastname&gt;<br />
+  	&lt;/student&gt;<br />
+  &lt;/root&gt;<br />
+</span></p>
+<p><h3>JSON: </h3>JSON is used to store information in an organized, and easy-to-access manner. Its full form is JavaScript Object Notation. It offers a human-readable collection of data which can be accessed logically.</p>
+<p><span class="exampleTitle">JSON:-</span><br /><span class="exampleDescription">
+  {<br />
+    &quot;student&quot;: [ <br />
+       { <br />
+          &quot;id&quot;:&quot;01&quot;,<br />
+          &quot;name&quot;: &quot;Tom&quot;, <br />
+          &quot;lastname&quot;: &quot;Price&quot; <br />
+       }, <br />
+       { <br />
+          &quot;id&quot;:&quot;02&quot;, <br />
+          &quot;name&quot;: &quot;Nick&quot;, <br />
+          &quot;lastname&quot;: &quot;Thameson&quot; <br />
+       } <br />
+    ]   <br />
+  }<br />
+</span></p>
+<p><h4>My choice: JSON.</h4></p>
+
+
+
+<h2><li>React vs Angular vs Vue.js</li></h2>
+<p><h3>React: </h3>React is a JavaScript library, open sourced by Facebook in 2013, which is great for building modern single-page applications of any size and scale.</p>
+<p>
+  <ul>
+ <h4>Pros</h4>
+    <li>Easy to learn, thanks to its simple design, use of JSX (an HTML-like syntax) for templating, and highly detailed documentation.</li>
+<li>Extremely fast, courtesy of React’s Virtual DOM implementation and various rendering optimizations.</li>
+<li>Great support for server-side rendering, making it a powerful framework for content-focused applications.</li>
+<li>Redux, the most popular framework for managing application state in React, is easy to learn and master.</li>
+<li>Skills learned in React can be applied (often directly) to React Native development.</li>
+<h4>Cons</h4>
+<li>React is unopinionated and leaves developers to make choices about the best way to develop. This can be tackled by strong project leadership and good processes.</li>
+<li>The community is divided on the best way to write CSS in React, split between traditional stylesheets and CSS-in-JS.</li>
+<li>React is moving away from class-based components, which may be a barrier for developers more comfortable with Object Oriented Programming (OOP).</li>
+<li>Mixing templating with logic (JSX) can be confusing for some developers at first.</li>
+<h4>Companies that use React:</h4> Facebook, Instagram, Netflix, New York Times, Yahoo, Khan Academy, Whatsapp, Codecademy, Dropbox, Airbnb, Asana, Atlassian, Intercom, Microsoft, Slack, Storybook, and many more.
+  </ul>
+</p>
+<p><h3>Angular: </h3>Angular is a superheroic JavaScript MVVM framework, founded in 2009, which is awesome for building highly interactive web applications.</p>
+<p>
+  <ul>
+ <h4>Pros</h4>
+    <li>Angular-language-service — which allows intelligence and autocomplete inside of component external HTML template files.</li>
+<li>Detailed documentation that allows getting the all necessary information for the individual developer without asking his colleagues. However, this requires more time for education.</li>
+<li>One-way data binding that enables singular behaviour for the app which minimized risks of possible errors.</li>
+<li>Structure and architecture specifically created for great project scalability.</li>
+
+<h4>Cons</h4>
+<li>Variety of different structures(Injectables, Components, Pipes, Modules etc.) makes it a bit harder to learn in comparison with React and Vue.js, which have an only “Component” in mind.</li>
+<li>Relatively slower performance, according to different benchmarks. On the other hand, it can be easily tackled by utilizing so-called “Change Detection Strategy”, which helps to control the rendering process of components manually.</li>
+<h4>Companies that use Angular:</h4> Microsoft, Autodesk, MacDonald’s, UPS, Cisco Solution Partner Program, AT&T, Apple, Adobe, GoPro, ProtonMail, Clarity Design System, Upwork, Freelancer, Udemy, YouTube, Paypal, Nike, Google, Telegram, Weather, iStockphoto, AWS, Crunchbase.
+  </ul>
+</p>
+<p><h3>Vue: </h3>Vue.js is a JavaScript framework, launched in 2013, which perfectly fits for creating highly adaptable user interfaces and sophisticated Single-page applications.</p>
+<p>
+  <ul>
+ <h4>Pros</h4>
+ <li>Empowered HTML. This means that Vue.js has many similar characteristics with Angular and this can help to optimize HTML blocks handling with the use of different components.</li>
+ <li>Easy to learn.</li>
+ <li>Adaptability. It provides a rapid switching period from other frameworks to Vue.js because of the similarity with Angular and React in terms of design and architecture.</li>
+ <li>Large scaling. Vue.js can help to develop pretty large reusable templates that can be made with no extra time allocated for that according to its simple structure.</li>
+ <li>Tiny size. Vue.js can weight around 20KB keeping its speed and flexibility that allows reaching much better performance in comparison to other frameworks.</li>
+<h4>Cons</h4>
+
+<li>Lack of resources. Vue.js still has a pretty small market share in comparison with React or Angular, which means that knowledge sharing in this framework is still in the beginning phase.</li>
+<li>Risk of over flexibility. Sometimes, Vue.js might have issues while integrating into huge projects and there is still no experience with possible solutions, but they will definitely come soon.</li>
+<h4>Companies that use Vue.js:</h4> Xiaomi, Alibaba, WizzAir, EuroNews, Grammarly, Gitlab and Laracasts, Adobe, Behance, Codeship, Reuters.
+  </ul>
+</p>
+<p><h4>My choice: Every framework has its own pros and cons. Its depends on the project. But first you should learn React.</h4></p>
+
+
+
+<h2><li>PHP vs Node.js</li></h2>
+<p><h3>PHP: </h3>PHP is an open-source server-side scripting language designed specifically for the web development. Although PHP is a server-side scripting language, it is also used as a general purpose scripting language. PHP scripts have an extension of .php and can contain Javascript, HTML, CSS and even plain text. PHP is predominantly used as part of LAMP stack which includes MySQL (for database), PHP (for server side code), and linux. All of them have different syntax plus good knowledge of HTML, CSS and Javascript is required</p>
+<p><span class="exampleTitle">PHP:-</span><br /><span class="exampleDescription">
+  $ php -S localhost:8000<br />
+    &lt;?php <br />
+    echo 'Hello! This is GeeksForGeeks';<br />
+  ?&gt; <br />
+</span></p>
+<p><h3>Node.js: </h3>Node.js is used for building fast and scalable applications and is an event driven, non-blocking I/O model. Node.js files have .js extension and contain only Javascript. With the birth of Node.js, it brings users the facility to built completely Javascript based applications. Javascript stack(MEAN or MERN) is better because the only coding language and syntax used is Javascript based.</p>
+<p><span class="exampleTitle">Node.js:-</span><br /><span class="exampleDescription">
+  $ node app.js <br />
+      var http <br />
+      = require('http'); <br />
+  http.createServer(function(req, res) {<br />
+          res.writeHead(200, { 'Content-Type' : 'text/plain' });<br />
+          res.end('Hi Programmer\n'); <br />
+      }) <br />
+      .listen(8080, '127.0.0.1'); <br />
+  console.log('GeeksForGeeks Server running at http://127.0.0.1:8080/');<br />
+</span></p>
+<p><h4>My choice: PHP.</h4></p>
+
+
+
+
+<h2><li>SQL vs NoSQL</li></h2>
+<p><h3>SQL: </h3>Structured Query language (SQL) pronounced as "S-Q-L" or sometimes as "See-Quel" is the standard language for dealing with Relational Databases. A relational database defines relationships in the form of tables.
+
+SQL programming can be effectively used to insert, search, update, delete database records.
+
+That doesn't mean SQL cannot do things beyond that. It can do a lot of things including, but not limited to, optimizing and maintenance of databases.
+
+Examples are MySQL Database, Oracle, Ms SQL Server, Sybase, etc. use SQL.</p>
+<p><span class="exampleTitle">SQL:-</span><br /><span class="exampleDescription">
+  INSERT INTO employees (employee_id,<br />
+  empage)<br />
+  VALUES ('abc001' , '23')<br />
+</span></p>
+<p><h3>NoSQL: </h3>NoSQL is a non-relational DMS, that does not require a fixed schema, avoids joins, and is easy to scale. NoSQL database is used for distributed data stores with humongous data storage needs. NoSQL is used for Big data and real-time web apps. Good example that you must have heard of is mongoDB. For example companies like Twitter, Facebook, Google that collect terabytes of user data every single day.</p>
+<p><span class="exampleTitle">NoSQL:-</span><br /><span class="exampleDescription">
+  db.employees.insert ({<br />
+  employee_id: 'abc001',<br />
+  age : 23,<br />
+  })<br />
+</span></p>
+<p><h4>My choice: NoSQL.</h4></p>
+
+</ul>
+      </main>
+    </div>
+
+  </body>
+</html>

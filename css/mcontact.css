@@ -1,0 +1,98 @@
+#bgImgContact{
+
+   display:none;
+}
+#swipeDownArrowGif2{
+  display: block;
+  position: absolute;
+
+  z-index: 100;
+  width:50px;
+top:90vh;
+left: 47vw;
+}
+#bgImgContactMobile{
+  position:absolute;
+  right:0;
+  display: block;
+  bottom:0;
+  max-width: 100%;
+  min-height: 100%;
+   filter: grayscale(30%) brightness(20%);
+   z-index: -1;
+}
+#contactMainText{
+  position: relative;
+  font-family: 'Questrial', sans-serif;
+    font-size: 5.5rem;
+    left:9%;
+    top:40%;
+    color: #e6e6e6;
+    font-weight: 700;
+}
+#friendlyHi{
+  display: none;
+}
+#friendlyHi2{
+  display: block;
+}
+#map{
+  width:100%;
+  height:30%;
+  position: relative;
+  top:34vh;
+filter: grayscale(100) brightness(90%);
+}
+
+#titleContactMiddle{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+position: relative;
+  bottom:.2em;
+  right:.3em;
+}
+.table-row-contact{
+display:table-row;
+}
+.table-col-contact{
+display:table-cell
+}
+#friendlyHi2{
+
+  font-family: 'Montserrat', sans-serif;
+margin: 5vh auto;
+top: 5em;
+  width:45%;
+  border:1px solid #E1A87A;
+  font-size: .9rem;
+  padding: 3em 3em;
+position: relative;
+cursor: pointer;
+  text-align: left;
+}
+#contactMainArea{
+  height:220%;
+  width: 100%;
+  display: block;
+}
+#sayHi{
+  color:#E1A87A;
+  font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+  font-size: 1rem;
+}
+#extraContactBottom{
+font-family: 'Questrial', sans-serif;
+font-size: 1.3rem;
+position: relative;
+top:20vh;
+}
+.innerTextLink{
+text-decoration: none;
+font-weight: 700;
+color: #E1A87A;
+}
+.innerTextLink:hover{
+  color: #d19c6f;
+}

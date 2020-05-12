@@ -1,0 +1,151 @@
+.pure-group{
+  border:hidden;
+}
+
+.crossOnOverlay{
+  float:right;
+  font-size:1.2rem;
+  cursor:pointer;
+}
+.textBoxInput{
+
+  border:1px solid #e6e6e6;
+  padding: 1em 1em;
+  outline:none;
+  width:60vw;
+
+}
+textarea{
+min-width:32.5em;
+max-width:32.5em;
+resize: none;
+}
+.mystyle {
+  width: 100%;
+  height:100%;
+  top:0;
+  transition: .2s ease-in-out;
+font-weight: 500;
+font-family: 'Montserrat', sans-serif;
+  position: fixed;
+  font-size: .8rem;
+  background-color: rgba(0,0,0,0.5);
+  color: black;
+  display: block;
+  z-index: 99999999999;
+}
+
+.hideIt{
+display: none;
+}
+#backgroundOverlayContact2{
+  height:20%;
+  padding: 2em 2em 1em 2em;
+  margin: 18% auto;
+  width:20%;
+  background:white;
+  position: relative;
+}
+#backgroundOverlayContact{
+height:80%;
+padding: 2em 2em 1em 2em;
+margin: 3% auto;
+width:40%;
+background:white;
+position: relative;
+}
+.mainContactText{
+  font-weight: 500;
+}
+.floatRightCotact{
+  float:right;
+}
+.name{
+position: relative;
+margin-left: 2em;
+margin-top: 2em;
+}
+.email{
+position: relative;
+bottom:6em;
+left:20em;
+}
+.msg{
+  margin-left: 2em;
+  bottom:4em;
+  position: relative;
+}
+#send-button{
+  position: relative;
+  outline: none;
+  height:4.5em;
+  width:18em;
+  bottom:1.5em;
+margin-left: 24%;
+font-size: .8rem;
+color:black;
+background-color: white;
+border:1px solid #E1A87A;
+cursor: pointer;
+}
+#send-button:hover{
+  color:#E1A87A;
+  background-color: black;
+  border:1px solid black;
+  transition: .3s ease-in-out
+}
+
+.thankyou_message{
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+  top:12em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color:#bdbbbb;
+}
+.fixedBg{
+  position:fixed;
+}
+#email{
+  margin-top: 5px;
+    width:15vw;
+}
+#name{
+    margin-top: 5px;
+      width:15vw;
+}
+#message{
+    margin-top: 5px;
+}
+::-webkit-input-placeholder { opacity: 1; -webkit-transition: opacity .5s; transition: opacity .5s; }  /* Chrome <=56, Safari < 10 */
+:-moz-placeholder { opacity: 1; -moz-transition: opacity .5s; transition: opacity .5s; } /* FF 4-18 */
+::-moz-placeholder { opacity: 1; -moz-transition: opacity .5s; transition: opacity .5s; } /* FF 19-51 */
+:-ms-input-placeholder { opacity: 1; -ms-transition: opacity .5s; transition: opacity .5s; } /* IE 10+ */
+::placeholder { opacity: 1; transition: .5s; font-weight: 500;
+font-family: 'Montserrat', sans-serif; font-size: .7rem;color:#8a8a8a;} /* Modern Browsers */
+
+*:focus::-webkit-input-placeholder { opacity: 0; } /* Chrome <=56, Safari < 10 */
+*:focus:-moz-placeholder { opacity: 0; } /* FF 4-18 */
+*:focus::-moz-placeholder { opacity: 0; } /* FF 19-50 */
+*:focus:-ms-input-placeholder { opacity: 0; } /* IE 10+ */
+*:focus::placeholder { opacity: 0; } /* Modern Browsers */
+
+#donateButton{
+background-color: white;
+border:1.5px solid #113984;
+cursor: pointer;
+outline: none;
+position: relative;
+top:3vh;
+padding: 10px;
+}
+#donateButton:hover{
+  background-color:#212121;
+  border:1.5px solid #212121;
+  transition: .3s ease-in-out;
+}
+#paypalimg{
+  width:50%;
+}

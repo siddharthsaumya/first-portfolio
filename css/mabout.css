@@ -1,0 +1,531 @@
+body{
+  margin: 0 0;
+overflow-y: hidden;
+overflow-x: hidden;
+
+}
+
+
+.heightOfSections{
+
+  max-height:100%;
+  min-width: 100%;
+overflow: hidden;
+display: block;
+position: static;
+}
+::selection {
+  background: #ffa8e3;
+}
+::-moz-selection {
+  background: #ffa8e3;
+}
+
+/*********************** Header *******************************************************/
+
+/*********************** Section one *******************************************************/
+#bgVideoAbout{
+
+ display: none;
+}
+#bgImgAbout{
+  display:block;
+  position:absolute;
+  right:0;
+  bottom:0;
+   width: 100%;
+  min-height:100%;
+   filter: grayscale(35%) brightness(35%);
+   z-index: -1;
+}
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+[data-title]:after {
+    content: attr(data-title);
+    background-color: white;
+    color: #111;
+    font-size: 1rem;
+    position: absolute;
+    box-shadow: 0px 0px 8px 1px #b0b0b0;
+    padding: 2px 10px 2px 10px;
+    bottom: -1.6em;
+    right:1em;
+font-weight: 700;
+    white-space: nowrap;
+    border-radius: 20px;
+    z-index: 99999;
+    visibility: hidden;
+    font-family: 'Martel', serif;
+}
+[data-title] {
+    position: relative;
+}
+#homeMainText{
+
+font-family: 'Questrial', sans-serif;
+  font-size: 3rem;
+  color: #e6e6e6;
+  font-weight: 700;
+  position: relative;
+
+
+}
+#myName{
+  position: relative;
+  right:.3em;
+  background-color: #ffd151;
+  color:#242424;
+  padding: 0px 5px;
+  margin-left: 10px;
+font-size: 2.7rem;
+width:100%;
+}
+#firstLineMain{
+top:15vh;
+position: relative;
+left:0;
+}
+#secondLineMain{
+  position: absolute;
+  left : 0;
+  top: 25vh;
+
+}
+.unwantedBr{
+  display: block;
+}
+#thirdLineMain{
+  color: #fff;
+  position: absolute;
+  top: 35vh;
+  left: 0;
+  width: 80%;
+font-size: 2.5rem;
+}
+
+
+#hireMeButton{
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+border-color: #e0b63f;
+z-index: 10;
+margin-top: 105%;
+color:#d9d9d9;
+font-size: .75rem;
+border-style:  solid;
+border-width: thin;
+padding: 25px 0px;
+margin-left: auto;
+margin-right: auto;
+font-weight: 600;
+width:30%;
+}
+#swipeDownArrowGif{
+  display:block;
+  z-index: 100;
+  width:50px;
+margin:9vh auto 0 auto;
+
+}
+
+/*********************** Section one *******************************************************/
+.bitemoji{
+
+display: none;
+}
+#titleOne{
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: 700;
+font-size: 3.1rem;
+position: relative;
+bottom: 20vh;
+left:5vw;
+padding-right: 100vw;
+color:#273e7d;
+}
+.contentOne{
+font-family: 'Montserrat', sans-serif;
+}
+.textPartRight{
+  background-color:white;
+position:relative;
+bottom:5vh;
+left:-35vw;
+font-size: 1.2rem;
+font-weight: 400;
+z-index: 100;
+}
+#secondSection{
+position: relative;
+
+height: 100%;
+width:100%;
+margin:0 auto;
+}
+/*********************** Section two *******************************************************/
+/*********************** Section three *******************************************************/
+
+#thirdSection{
+position: relative;
+
+  height: 100%;
+  width:100%;
+
+
+}
+.textPartLeft{
+right:23vw;
+position: relative;
+  padding-bottom: 2em;
+  color:white;
+  padding-right: 10em;
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+font-size: 1.5rem;
+width:100%;
+}
+#titleTwo{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 3.1rem;
+  position: relative;
+top:-15vh;
+left:10vw;
+  width:500px;
+  color:#ffd151;
+}
+#bitemoji2{
+
+display: none;
+}
+.innerContentEdu{
+  font-size: 1rem;
+}
+#extra1{
+  text-align: center;
+  color:#e3e3e3;
+  z-index: 200;
+  position: relative;
+  bottom: 1.75em;
+  font-family: 'Questrial', sans-serif;
+  font-weight: 600;
+    font-size: .9rem;
+}
+.underline-yellow{
+  text-decoration: underline;
+  text-decoration-color: #ffd151;
+
+}
+/*********************** Section three *******************************************************/
+/*********************** Section four *******************************************************/
+#fourthSection{
+top:10%;
+position: relative;
+left:1em;
+
+
+}
+#skillPro{
+background-color: white;
+padding-bottom: 2em;
+margin-left: auto;
+margin-right:auto;
+line-height: 1.7em;
+white-space: nowrap;
+width:70%;
+}
+
+#bitemoji3{
+
+display: none;
+}
+.titleThree{
+position: relative;
+bottom:  8vh;
+left:-2vw;
+color:#273e7d;
+  font-weight: 700;
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 3.5rem;
+}
+.points{
+
+    background-color: #292929;
+    border-radius: 50px;
+    color:white;
+    font-size: .8rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 3px 8px;
+    margin: 2px 2px;
+font-weight: 500;
+
+
+}
+.pointsHead{
+background-color: white;
+    box-shadow: 0px 0px 10px .3px #d6d6d6;
+        border-radius: 50px;
+        padding: 6px 20px;
+font-size: .9rem;
+        font-family: 'Montserrat', sans-serif;
+}
+.allPoints{
+  text-align: left;
+  position:relative;
+  right:20vw;
+  bottom:1vh;
+}
+#extra2{
+  font-family: 'Questrial', sans-serif;
+  font-weight: 600;
+  font-size: .8rem;
+color:#425075;
+text-align: center;
+position: relative;
+top:-3vh;
+right:4vw;
+
+}
+.underline-blue{
+  text-decoration: underline;
+  text-decoration-color: #3067f0;
+
+}
+
+/*********************** Section four *******************************************************/
+/*********************** Section five *******************************************************/
+#fifthSection{
+text-align: center;
+padding-top: 2%;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+#titleFour{
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  color:#ffd151;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+#titleFour:before, #titleFour:after {
+    position: absolute;
+    top: 51%;
+    display: none;
+    overflow: hidden;
+    width: 50%;
+    height: 3px;
+    content: '\a0';
+    background-color: #ffd151;
+}
+#titleFour:before {
+    margin-left: -55%;
+    text-align: right;
+}
+#titleFour:after {
+  left:105%;
+}
+.textMeth{
+position: relative;
+top:-2em;
+  font-size: 1rem;
+  padding: .35em;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+/*********************** Section five *******************************************************/
+/*********************** Section six *******************************************************/
+#sixthSection{
+padding-top: 1%;
+padding-left: 5%;
+padding-right: 3%;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+#titleFive{
+
+  color:#273e7d;
+position:relative;
+left:8vw;
+top:2vh;
+  font-weight: 700;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.5rem;
+}
+#bitemoji4{
+  width:10%;
+  float:right;
+  position: relative;
+  bottom: 2em;
+display: none;
+}
+.projects{
+  width:90%;
+  height:30%;
+  display: inline-block;
+
+}
+.mprojects{
+  height:auto;
+  width:80%;
+  margin: 2vh auto 2vh 7.5vw;
+
+}
+#projectComp{
+  display: none;
+}
+#projectMobile{
+  display: block;
+
+}
+.overlayText {
+  color: #162347;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.containerMain:hover .overlay {
+  opacity: 1;
+  box-shadow: 0 0 15px 4px #dedede;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 90%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f0f0f0;
+}
+.containerMain {
+  position: relative;
+  top:6em;
+  left:13%;
+  cursor: pointer;
+}
+#extra3{
+  font-family: 'Questrial', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+color:#425075;
+z-index: 10000;
+text-align: center;
+position: relative;
+top:0vh;
+}
+/*********************** Section six *******************************************************/
+
+#hr1{
+  width:25%;
+  position: relative;
+  top:-15vh;
+border: 1px solid #decc00;
+ }
+
+/*********************** Section seven *******************************************************/
+#titleSix{
+  color:#273e7d;
+  margin-top: 4%;
+  margin-left: 22vw;
+
+  margin-bottom: 5%;
+  font-weight: 700;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.5rem;
+}
+#picTable{
+  width:100%;
+display: table;
+margin-left:2.5%;
+display: none;
+}
+.picRow{
+  width:100%;
+  display: table-row;
+
+}
+.picCol{
+  display: table-cell;
+  width:20%;
+  height:auto;
+  position: relative;
+
+}
+
+.picAll{
+  width:75%;
+  filter: grayscale(100);
+margin: .7em 0;
+
+}
+.picAll:hover{
+  filter: grayscale(0);
+transform: scale(1.3);
+  transition: transform .5s ease;
+}
+
+#picTable2{
+  width:100%;
+display: table;
+margin-left:2%;
+display: block;
+}
+.picRow2{
+  width:100%;
+  display: table-row;
+
+}
+.picCol2{
+  display: table-cell;
+  width:33.3%;
+  height:auto;
+  position: relative;
+
+}
+
+.picAll2{
+  width:88%;
+
+margin: .5vh 0;
+
+}
+
+/*********************** Section seven *******************************************************/
+/*********************** Section eight *******************************************************/
+
+/*********************** Section eight *******************************************************/
+/*********************** Section nine *******************************************************/
+#titleEight{
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  bottom:7vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+    color:#1e2f61;
+text-align: center;
+  font-size: 2rem;
+    font-weight: 700;
+}
+
+/*********************** Section nine *******************************************************/
+.lastAreaAbout{
+  height:40%;
+  width:100%;
+  display:block;
+}
