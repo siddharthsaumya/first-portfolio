@@ -112,7 +112,7 @@ text-align: center;
 font-family: 'Montserrat', sans-serif;
 border-color: #e0b63f;
 z-index: 10;
-margin-top: 105%;
+margin-top: 115%;
 color:#d9d9d9;
 font-size: .75rem;
 border-style:  solid;
@@ -127,7 +127,7 @@ width:30%;
   display:block;
   z-index: 100;
   width:50px;
-margin:9vh auto 0 auto;
+margin:13vh auto 0 auto;
 
 }
 
